@@ -37,12 +37,14 @@
                         at <a href="https://www.jhu.edu/">Johns Hopkins University</a>.
                         I received my Bachelor of Engineering in Network Engineering from
                         <a href="https://www.scut.edu.cn/en/">South China University of Technology</a> in 2025,
-                        where I was advised by Prof. Zhang Tong.
+                        where I was advised by Prof. Tong Zhang (School of Computer Science and Engineering).
                     </p>
                     <p>
                         My research interests broadly lie in <strong>Web Security</strong>, <strong>Software Security</strong>,
                         and <strong>AI Security</strong>. I study emerging vulnerability classes and develop automated techniques,
                         based on program analysis and LLMs, to detect and exploit them at scale across real-world systems.
+                        I am also interested in <strong>multimodal machine learning</strong>, with prior work on
+                        AI-driven depression detection using 3D video, audio, and text modalities, and EEG-based brainwave music generation.
                     </p>
                     <p class="links">
                         <a href="mailto:jji30@jh.edu">Email</a> /
@@ -204,65 +206,65 @@
 
         <!-- CVEs Section -->
         <section id="vulnerabilities">
-            <h2>Discovered Vulnerabilities (CVEs)</h2>
-            <p class="section-desc">Selected security vulnerabilities discovered in popular open-source projects:</p>
+            <h2>Discovered Vulnerabilities</h2>
+            <p class="section-desc">
+                I have reported 25+ security vulnerabilities (CVEs reserved) in popular open-source Node.js/TypeScript projects on GitHub.
+                Below is a selective list (CVE IDs pending publication):
+            </p>
             <table class="cve-table">
-                <thead>
-                    <tr>
-                        <th>Project</th>
-                        <th>Stars</th>
-                        <th>CVE ID</th>
-                    </tr>
-                </thead>
                 <tbody>
                     <tr>
-                        <td><a href="https://github.com/getmaxun/maxun">getmaxun/maxun</a></td>
-                        <td>15.7k</td>
-                        <td>CVE-2026-48637</td>
+                        <td class="cve-id">CVE-2026-48637</td>
+                        <td class="cve-project"><a href="https://github.com/getmaxun/maxun">getmaxun/maxun</a></td>
+                        <td class="cve-type">Auth Bypass</td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/linnovate/mean">linnovate/mean</a></td>
-                        <td>12.1k</td>
-                        <td>CVE-2026-48654, CVE-2026-48655</td>
+                        <td class="cve-id">CVE-2026-48654</td>
+                        <td class="cve-project"><a href="https://github.com/linnovate/mean">linnovate/mean</a></td>
+                        <td class="cve-type">Privilege Escalation</td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/santiq/bulletproof-nodejs">santiq/bulletproof-nodejs</a></td>
-                        <td>5.8k</td>
-                        <td>CVE-2026-48663, CVE-2026-48664, CVE-2026-48622</td>
+                        <td class="cve-id">CVE-2026-48655</td>
+                        <td class="cve-project"><a href="https://github.com/linnovate/mean">linnovate/mean</a></td>
+                        <td class="cve-type">IDOR</td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/w3tecch/express-typescript-boilerplate">w3tecch/express-typescript-boilerplate</a></td>
-                        <td>3.4k</td>
-                        <td>CVE-2026-48621, CVE-2026-48676, CVE-2026-48677</td>
+                        <td class="cve-id">CVE-2026-48663</td>
+                        <td class="cve-project"><a href="https://github.com/santiq/bulletproof-nodejs">santiq/bulletproof-nodejs</a></td>
+                        <td class="cve-type">Auth Bypass</td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/lujakob/nestjs-realworld-example-app">lujakob/nestjs-realworld-example-app</a></td>
-                        <td>3.4k</td>
-                        <td>CVE-2026-48626, CVE-2026-48656</td>
+                        <td class="cve-id">CVE-2026-48621</td>
+                        <td class="cve-project"><a href="https://github.com/w3tecch/express-typescript-boilerplate">w3tecch/express-typescript-boilerplate</a></td>
+                        <td class="cve-type">Injection</td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/notiz-dev/nestjs-prisma-starter">notiz-dev/nestjs-prisma-starter</a></td>
-                        <td>2.5k</td>
-                        <td>CVE-2026-48657, CVE-2026-48658, CVE-2026-48628, CVE-2026-48629</td>
+                        <td class="cve-id">CVE-2026-48626</td>
+                        <td class="cve-project"><a href="https://github.com/lujakob/nestjs-realworld-example-app">lujakob/nestjs-realworld-example-app</a></td>
+                        <td class="cve-type">Auth Bypass</td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/stemmlerjs/ddd-forum">stemmlerjs/ddd-forum</a></td>
-                        <td>2.1k</td>
-                        <td>CVE-2026-48666, CVE-2026-48667, CVE-2026-48668, CVE-2026-48636</td>
+                        <td class="cve-id">CVE-2026-48657</td>
+                        <td class="cve-project"><a href="https://github.com/notiz-dev/nestjs-prisma-starter">notiz-dev/nestjs-prisma-starter</a></td>
+                        <td class="cve-type">Privilege Escalation</td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/surmon-china/nodepress">surmon-china/nodepress</a></td>
-                        <td>1.5k</td>
-                        <td>CVE-2026-48665</td>
+                        <td class="cve-id">CVE-2026-48666</td>
+                        <td class="cve-project"><a href="https://github.com/stemmlerjs/ddd-forum">stemmlerjs/ddd-forum</a></td>
+                        <td class="cve-type">IDOR</td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/wppconnect-team/wppconnect-server">wppconnect-team/wppconnect-server</a></td>
-                        <td>1.0k</td>
-                        <td>CVE-2026-48670, CVE-2026-48671, CVE-2026-48672, CVE-2026-48673, CVE-2026-48675, CVE-2026-48639</td>
+                        <td class="cve-id">CVE-2026-48665</td>
+                        <td class="cve-project"><a href="https://github.com/surmon-china/nodepress">surmon-china/nodepress</a></td>
+                        <td class="cve-type">Auth Bypass</td>
+                    </tr>
+                    <tr>
+                        <td class="cve-id">CVE-2026-48670</td>
+                        <td class="cve-project"><a href="https://github.com/wppconnect-team/wppconnect-server">wppconnect-team/wppconnect-server</a></td>
+                        <td class="cve-type">RCE</td>
                     </tr>
                 </tbody>
             </table>
-            <p class="cve-summary">Total: <strong>25+ CVEs</strong> across popular Node.js/TypeScript projects (sorted by repository stars).</p>
         </section>
 
         <!-- Footer -->
