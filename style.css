@@ -74,10 +74,11 @@ nav {
 .about-photo img {
     width: 200px;
     height: 240px;
-    border-radius: 6px;
+    border-radius: 12px;
     object-fit: cover;
     object-position: top;
     border: 3px solid #eee;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .about-text h1 {
@@ -136,8 +137,19 @@ section h2 {
     font-size: 14px;
 }
 
-/* Education */
-.edu-item {
+.news-new {
+    background: #e74c3c;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* Education & Research */
+.edu-item, .research-item, .exp-item {
     margin-bottom: 25px;
 }
 
@@ -172,10 +184,6 @@ section h2 {
 }
 
 /* Research & Experience lists */
-.research-item, .exp-item {
-    margin-bottom: 25px;
-}
-
 .research-item ul, .exp-item ul, .edu-item ul {
     margin-top: 8px;
     padding-left: 20px;
@@ -214,20 +222,70 @@ section h2 {
     color: #666;
 }
 
-/* Skills */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+/* Awards Table */
+.awards-table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.skill-category h3 {
-    font-size: 0.95em;
-    color: #1772d0;
-    margin-bottom: 5px;
+.awards-table tr {
+    border-bottom: 1px solid #f0f0f0;
 }
 
-.skill-category p {
+.awards-table td {
+    padding: 10px 5px;
+    font-size: 15px;
+}
+
+.award-name {
+    color: #333;
+}
+
+.award-date {
+    text-align: right;
+    color: #666;
+    font-style: italic;
+    white-space: nowrap;
+    width: 100px;
+}
+
+/* CVE Table */
+.section-desc {
+    font-size: 14.5px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.cve-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+}
+
+.cve-table thead {
+    background: #f5f5f5;
+}
+
+.cve-table th {
+    text-align: left;
+    padding: 10px 8px;
+    font-weight: 600;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+}
+
+.cve-table td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+.cve-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.cve-summary {
+    margin-top: 15px;
     font-size: 14.5px;
     color: #555;
 }
@@ -252,7 +310,7 @@ footer {
 
     .about-photo img {
         width: 150px;
-        height: 150px;
+        height: 180px;
     }
 
     .nav-container a {
@@ -272,7 +330,7 @@ footer {
         margin-top: 2px;
     }
 
-    .skills-grid {
-        grid-template-columns: 1fr;
+    .cve-table {
+        font-size: 13px;
     }
 }
