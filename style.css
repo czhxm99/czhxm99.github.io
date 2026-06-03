@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    color: #1772d0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f09228;
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+    padding: 12px 0;
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-container a {
+    margin: 0 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-container a:hover {
+    color: #1772d0;
+    text-decoration: none;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+/* About Section */
+.about-section {
+    padding: 40px 0 30px;
+    border-bottom: none;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.about-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #eee;
+}
+
+.about-text h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #222;
+    font-weight: 700;
+}
+
+.about-text p {
+    margin-bottom: 12px;
+    font-size: 15.5px;
+}
+
+.about-text .links {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.about-text .links a {
+    font-weight: 600;
+}
+
+/* Sections */
+section {
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #222;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1772d0;
+    display: inline-block;
+}
+
+/* News */
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-list li {
+    padding: 8px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.news-date {
+    font-weight: 600;
+    color: #1772d0;
+    margin-right: 10px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+/* Education */
+.edu-item {
+    margin-bottom: 25px;
+}
+
+.edu-header, .research-header, .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.edu-header h3, .research-header h3, .exp-header h3 {
+    font-size: 1.1em;
+    color: #222;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+.edu-degree, .research-role, .exp-role {
+    font-style: italic;
+    color: #555;
+    margin: 4px 0;
+}
+
+.exp-loc {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+/* Research & Experience lists */
+.research-item, .exp-item {
+    margin-bottom: 25px;
+}
+
+.research-item ul, .exp-item ul, .edu-item ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.research-item li, .exp-item li, .edu-item li {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #444;
+}
+
+/* Publications */
+.pub-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 3px solid #1772d0;
+    border-radius: 3px;
+}
+
+.pub-title {
+    font-weight: 600;
+    font-size: 15.5px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.pub-authors {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.pub-venue {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-category h3 {
+    font-size: 0.95em;
+    color: #1772d0;
+    margin-bottom: 5px;
+}
+
+.skill-category p {
+    font-size: 14.5px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .nav-container a {
+        margin: 0 6px;
+        font-size: 13px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .edu-header, .research-header, .exp-header {
+        flex-direction: column;
+    }
+
+    .date {
+        margin-top: 2px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
