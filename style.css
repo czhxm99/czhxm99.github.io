@@ -73,8 +73,10 @@ nav {
 
 .about-photo img {
     width: 200px;
+    height: 240px;
     border-radius: 6px;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top;
     border: 3px solid #eee;
 }
 
